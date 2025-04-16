@@ -6,4 +6,4 @@ I have it in one project, want the same setup in another, so am pulling out as a
 
 **Status 2025-04-16 : set up repo, about to extract**
 
-*Evee Bee*
+_Evee Bee_

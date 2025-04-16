@@ -1,10 +1,14 @@
 {
   "name": "evb",
-  "version": "0.8.0",
+  "version": "0.5.0",
   "description": "a simple event bus",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development",
+    "test": "jasmine --config=jasmine.json",
+    "rp": "repomix -c repomix.config.json ."
   },
   "repository": {
     "type": "git",
@@ -20,5 +24,10 @@
   "bugs": {
     "url": "https://github.com/danja/evb/issues"
   },
-  "homepage": "https://github.com/danja/evb#readme"
+  "homepage": "https://github.com/danja/evb#readme",
+  "devDependencies": {
+    "chai": "^5.2.0",
+    "jasmine": "^5.6.0",
+    "repomix": "^0.3.1"
+  }
 }
