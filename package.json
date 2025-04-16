@@ -1,0 +1,24 @@
+{
+  "name": "evb",
+  "version": "0.8.0",
+  "description": "a simple event bus",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danja/evb.git"
+  },
+  "keywords": [
+    "event",
+    "bus",
+    "message"
+  ],
+  "author": "Danny Ayers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danja/evb/issues"
+  },
+  "homepage": "https://github.com/danja/evb#readme"
+}
