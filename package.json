@@ -1,6 +1,6 @@
 {
   "name": "evb",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "a simple event bus",
   "type": "module",
   "main": "index.js",
