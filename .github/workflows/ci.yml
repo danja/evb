@@ -20,7 +20,7 @@ jobs:
       - name: Run tests with coverage
         run: |
           npx vitest run --coverage
-      - name: Upload coverage to Coveralls
+      - name: Upload coverage to Coveralls try again
         uses: coverallsapp/github-action@v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
