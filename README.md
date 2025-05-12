@@ -6,9 +6,13 @@
 
 A minimal, dependency-free JavaScript event bus for decoupled communication between modules.
 
+Check the [Atuin Demo](https://danja.github.io/atuin/) to ~~see~~ experience it in action (is under the hood).
+
 ## Overview
 
 `evb` (Event Bus) provides a simple publish/subscribe mechanism for JavaScript applications. It is designed to be lightweight and easy to integrate, making it suitable for small projects, prototypes, or educational purposes. The API is intentionally minimal, focusing on core event bus functionality without extra features or complexity.
+
+*I had a handful of little browser-oriented apps which needed an event bus. It didn't really justify a 3rd party feature-rich lib, so I threw together the minimum necessary (as a 1st party lib).* 
 
 ## Features
 
