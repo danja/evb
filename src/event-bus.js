@@ -1,5 +1,12 @@
 // Simple event bus for pub/sub communication
+/**
+ * EventBus provides a minimal publish/subscribe API for decoupled communication.
+ * @class
+ */
 export class EventBus {
+    /**
+     * Create a new EventBus instance.
+     */
     constructor() {
         this.listeners = new Map()
     }

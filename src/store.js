@@ -5,6 +5,15 @@ import { EVENTS } from './event-constants.js'
 /**
  * Create a simple store with reducer and initial state
  * Emits EVENTS.STATE_CHANGED on every dispatch
+ * @template S State type
+ * @template A Action type
+ * @param {(state: S, action: A) => S} reducer - The reducer function
+ * @param {S} initialState - The initial state
+ * @returns {{
+ *   getState: () => S,
+ *   dispatch: (action: A) => A,
+ *   subscribe: (listener: (state: S) => void) => () => void
+ * }} Store API
  */
 export function createStore(reducer, initialState) {
     let state
@@ -40,4 +49,4 @@ export function createStore(reducer, initialState) {
 // import { createStore } from 'evb/src/store.js'
 // const store = createStore(reducer)
 // store.subscribe(state => { ... })
-// store.dispatch({ type: 'ACTION', payload: ... }) 
+// store.dispatch({ type: 'ACTION', payload: ... })

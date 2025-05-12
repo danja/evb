@@ -1,5 +1,39 @@
 // General-purpose event constants
 // Extend or override as needed in your app
+/**
+ * Common event name constants for use with the event bus and application modules.
+ * @namespace EVENTS
+ * @property {string} ERROR_OCCURRED - Error event
+ * @property {string} APP_INITIALIZED - Application initialized
+ * @property {string} SHARE_RECEIVED - Share received
+ * @property {string} STATE_CHANGED - State changed
+ * @property {string} GRAPH_CREATED - Dataset graph created
+ * @property {string} GRAPH_UPDATED - Dataset graph updated
+ * @property {string} GRAPH_DELETED - Dataset graph deleted
+ * @property {string} QUAD_CREATED - Dataset quad created
+ * @property {string} QUAD_UPDATED - Dataset quad updated
+ * @property {string} QUAD_DELETED - Dataset quad deleted
+ * @property {string} DATASET_SYNCED - Dataset synced
+ * @property {string} POST_CREATED - RDF post created
+ * @property {string} POST_UPDATED - RDF post updated
+ * @property {string} POST_DELETED - RDF post deleted
+ * @property {string} MODEL_SYNCED - RDF model synced
+ * @property {string} ENDPOINT_ADDED - Endpoint added
+ * @property {string} ENDPOINT_REMOVED - Endpoint removed
+ * @property {string} ENDPOINT_UPDATED - Endpoint updated
+ * @property {string} ENDPOINT_STATUS_CHANGED - Endpoint status changed
+ * @property {string} ENDPOINTS_STATUS_CHECKED - Endpoints status checked
+ * @property {string} ENDPOINT_CHECK_REQUESTED - Endpoint check requested
+ * @property {string} SPARQL_QUERY_STARTED - SPARQL query started
+ * @property {string} SPARQL_QUERY_COMPLETED - SPARQL query completed
+ * @property {string} SPARQL_QUERY_FAILED - SPARQL query failed
+ * @property {string} SPARQL_UPDATE_STARTED - SPARQL update started
+ * @property {string} SPARQL_UPDATE_COMPLETED - SPARQL update completed
+ * @property {string} SPARQL_UPDATE_FAILED - SPARQL update failed
+ * @property {string} VIEW_CHANGED - UI view changed
+ * @property {string} NOTIFICATION_SHOW - UI notification show
+ * @property {string} FORM_SUBMITTED - UI form submitted
+ */
 export const EVENTS = {
     // Error events
     ERROR_OCCURRED: 'error:occurred',
@@ -39,4 +73,4 @@ export const EVENTS = {
     VIEW_CHANGED: 'ui:view:changed',
     NOTIFICATION_SHOW: 'ui:notification:show',
     FORM_SUBMITTED: 'ui:form:submitted'
-} 
+}

@@ -2,6 +2,10 @@
 
 /**
  * Combine multiple reducers into one (Redux-style)
+ * @template S State object type
+ * @template A Action object type
+ * @param {Object<string, function(S, A): S>} reducers - An object mapping keys to reducer functions
+ * @returns {function(S=, A): S} A root reducer function
  */
 export function combineReducers(reducers) {
     return (state = {}, action) => {
@@ -20,7 +24,10 @@ export function combineReducers(reducers) {
 
 /**
  * Simple action creator
+ * @template T
+ * @param {string} type - The action type
+ * @returns {function(T): {type: string, payload: T}} An action creator function
  */
 export function createAction(type) {
     return (payload) => ({ type, payload })
-} 
+}
