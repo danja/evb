@@ -80,7 +80,7 @@ evb/
 
 ## Testing
 
-Unit tests are provided using Jasmine. To run the tests:
+Unit tests are provided using [Vitest](https://vitest.dev/). To run the tests:
 
 ```sh
 npm test
