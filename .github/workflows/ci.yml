@@ -19,8 +19,7 @@ jobs:
         run: npm install
       - name: Run tests with coverage
         run: |
-          npm install -g nyc
-          nyc --reporter=lcov jasmine
+          npx vitest run --coverage
       - name: Upload coverage to Coveralls
         uses: coverallsapp/github-action@v2
         with:
