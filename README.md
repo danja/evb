@@ -86,6 +86,18 @@ Unit tests are provided using [Vitest](https://vitest.dev/). To run the tests:
 npm test
 ```
 
+### Coverage
+
+Test coverage reports are generated using Vitest's built-in coverage tool. To generate a coverage report (including lcov and HTML formats):
+
+```sh
+npm run coverage
+```
+
+The HTML report can be viewed by opening `coverage/index.html` in your browser. The lcov report is available at `coverage/lcov.info` for integration with services like Coveralls.
+
 ## License
 
-MIT License. See the LICENSE file for details.
+Code : MIT License. See the LICENSE file for details. AAny docs : public domain, attribution appreciated.
+
+© 2025 [Danny Ayers](https://danny.ayers.name) ([@danja](https://twitter.com/danja)), Anthropic Claude, GitHub Copilot and Canine Claudio. A [hyperdata.it](https://hyperdata.it) subproject.
