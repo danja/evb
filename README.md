@@ -12,7 +12,7 @@ Check the [Atuin Demo](https://danja.github.io/atuin/) to ~~see~~ experience it 
 
 `evb` (Event Bus) provides a simple publish/subscribe mechanism for JavaScript applications. It is designed to be lightweight and easy to integrate, making it suitable for small projects, prototypes, or educational purposes. The API is intentionally minimal, focusing on core event bus functionality without extra features or complexity.
 
-*I had a handful of little browser-oriented apps which needed an event bus. It didn't really justify a 3rd party feature-rich lib, so I threw together the minimum necessary (as a 1st party lib). It does include basic [Redux](https://redux.js.org/tutorials/fundamentals/part-2-concepts-data-flow)-style util methods, but these haven't really been tried in the wild.* 
+*I had a handful of little browser-oriented apps which needed an event bus. It didn't really justify a 3rd party feature-rich lib, so I threw together the minimum necessary (as a 1st party lib). It does include basic state management and [Redux](https://redux.js.org/tutorials/fundamentals/part-2-concepts-data-flow)-style util methods, but these haven't really been tried in the wild.* 
 
 ## Features
 
