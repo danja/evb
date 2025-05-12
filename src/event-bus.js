@@ -63,8 +63,24 @@ export class EventBus {
 // Singleton instance for convenience
 export const eventBus = new EventBus()
 
+// Direct API for convenience (for legacy/common usage)
+export const on = eventBus.on.bind(eventBus)
+export const off = (event, callback) => {
+    const callbacks = eventBus.listeners.get(event)
+    if (callbacks) {
+        callbacks.delete(callback)
+        if (callbacks.size === 0) {
+            eventBus.listeners.delete(event)
+        }
+    }
+}
+export const emit = eventBus.emit.bind(eventBus)
+
+// For testability: reset all listeners
+export const _reset = () => eventBus.removeAllListeners()
+
 // Usage:
-// import { eventBus } from 'evb/src/event-bus.js'
-// const unsubscribe = eventBus.on('my:event', data => { ... })
-// eventBus.emit('my:event', { foo: 'bar' })
-// unsubscribe() // to remove listener 
+// import { eventBus, on, off, emit, _reset } from 'evb/src/event-bus.js'
+// const unsubscribe = on('my:event', data => { ... })
+// emit('my:event', { foo: 'bar' })
+// off('my:event', unsubscribe)
