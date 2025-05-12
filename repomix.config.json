@@ -1,7 +1,7 @@
 {
     "output": {
-        "filePath": "./docs/knowledge/evb_repomix.md",
-        "headerText": "Squirt repo",
+        "filePath": "./docs/evb_repomix.md",
+        "headerText": "EVB - Event Bus source files description",
         "removeComments": true
     },
     "ignore": {
