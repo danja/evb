@@ -102,6 +102,6 @@ The HTML report can be viewed by opening `coverage/index.html` in your browser. 
 
 ## License
 
-Code : MIT License. See the LICENSE file for details. AAny docs : public domain, attribution appreciated.
+Code : [MIT License](LICENSE). Docs : public domain, attribution appreciated.
 
-© 2025 [Danny Ayers](https://danny.ayers.name) ([@danja](https://twitter.com/danja)), Anthropic Claude, GitHub Copilot and Canine Claudio. A [hyperdata.it](https://hyperdata.it) subproject.
+© 2025 [Danny Ayers](https://danny.ayers.name) ([@danja](https://twitter.com/danja)), Anthropic Claude, GitHub Copilot and Canine Claudio. A [hyperdata.it](https://hyperdata.it) *thing*.
