@@ -133,3 +133,7 @@ dist
 
 # Ignore generated JSDoc documentation
 docs/jsdoc/
+
+# Ignore coverage reports
+docs/coverage/
+coverage/
