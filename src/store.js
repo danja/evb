@@ -7,12 +7,12 @@ import { EVENTS } from './event-constants.js'
  * Emits EVENTS.STATE_CHANGED on every dispatch
  * @template S State type
  * @template A Action type
- * @param {(state: S, action: A) => S} reducer - The reducer function
+ * @param {function(S, A): S} reducer - The reducer function
  * @param {S} initialState - The initial state
  * @returns {{
- *   getState: () => S,
- *   dispatch: (action: A) => A,
- *   subscribe: (listener: (state: S) => void) => () => void
+ *   getState: function(): S,
+ *   dispatch: function(A): A,
+ *   subscribe: function(function(S): void): function(): void
  * }} Store API
  */
 export function createStore(reducer, initialState) {
