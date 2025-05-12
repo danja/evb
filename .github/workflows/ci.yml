@@ -17,12 +17,10 @@ jobs:
           node-version: 20
       - name: Install dependencies
         run: npm install
-      - name: Run tests
-        run: npm test
-      - name: Generate coverage
+      - name: Run tests with coverage
         run: |
           npm install -g nyc
-          nyc npm test
+          nyc --reporter=lcov jasmine
       - name: Upload coverage to Coveralls
         uses: coverallsapp/github-action@v2
         with:
