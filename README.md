@@ -3,6 +3,7 @@
 [![Build](https://github.com/danja/evb/actions/workflows/ci.yml/badge.svg)](https://github.com/danja/evb/actions)
 [![Coverage Status](https://coveralls.io/repos/github/danja/evb/badge.svg?branch=main)](https://coveralls.io/github/danja/evb?branch=main)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/danja/evb)
 
 A minimal, dependency-free JavaScript event bus for decoupled communication between modules.
 
